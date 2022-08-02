@@ -1,0 +1,14 @@
+html {
+    font-size: 10px;
+}
+.root {
+    background-color: #171717;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.container {
+    width: 1400px;
+    height: 2000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #171717;
+}

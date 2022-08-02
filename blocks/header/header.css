@@ -1,0 +1,51 @@
+
+.header {
+    height: 70rem;
+    margin: 0 0 5rem 0;
+    padding: 0;
+    background-color: #171717;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__arrow-text {
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 100;
+    
+}
+.header__arrow {
+    width: 200px;
+    height: 100px;
+    background: url("../../img/arrow.png") no-repeat;
+    background-size: 200px auto;
+    position: absolute;
+    bottom: 7.2rem;
+    left: 14em;
+}
+.main-btn {
+    width: 60rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #ff3e9e .2rem solid;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    transition: all .3s ease-in-out;
+}
+.main-btn:hover {
+    font-size: 1.5rem;
+}
+.main-btn__title {
+    font-size: 6em;
+}
+.content {
+    background-color: #333;
+    height: 40rem;
+    border-radius: 3rem;
+}
