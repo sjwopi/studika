@@ -5,23 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студика</title>
+    <title itemprop="headline">МГТУ им. Баумана</title>
+    <!-- <link rel="icon" sizes="180x180" href="/img/site-icon.webp"> -->
     <link rel="stylesheet" href="/pages/index.css">
 </head>
 
 <body class="root">
-    <div class="container">
 
-        <header class="header">
-        </header>
+    <header class="header">
+        <div class="header__info">
 
-        <main class="content">
-        </main>
+            <div class="header__container">
+                <img src="img/logo.svg" class="header__logo">
+                <button type="button" class="header__geo"></button>
+                <p class="header__city">Москва</p>
+            </div>
 
-        <footer class="footer">
-        </footer>
+            <input type="search" class="header__search" placeholder="Учебное заведение, специальность или профессия">
 
-    </div>
+            <div class="header__container">
+                <button type="button" class="header__favorites"></button>
+                <p class="header__favorites-count">1</p>
+
+                <button type="button" class="header__enter-btn">Войти</button>
+
+                <div style="display: none;" class="header__profile">
+                    <p class="profile__name"></p>
+                    <img src="" alt="аватар" class="profile__avatar">
+                </div>
+            </div>
+
+        </div>
+        <!-- <nav class="header__menu">
+            <ul class="menu__list">
+                <li class="menu__point"></li>
+                <li class="menu__point"></li>
+                <li class="menu__point"></li>
+                <li class="menu__point"></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main class="content">
+    </main>
+
+    <footer class="footer">
+    </footer>
+
 </body>
 
 </html>

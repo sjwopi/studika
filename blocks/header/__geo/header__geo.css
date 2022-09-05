@@ -1,0 +1,14 @@
+.header__geo {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px 0 0;
+    background: url("../../../img/location.svg") 5px 5px / 18px no-repeat;
+    box-sizing: border-box;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+.header__geo:hover {
+    border-color: #f1f1f1;
+    background-color: #f1f1f1;
+}

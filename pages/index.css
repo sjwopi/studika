@@ -1,6 +1,17 @@
 @import url(../vendor/normalize.css);
-
 @import url(../vendor/fonts/opensans.css);
 @import url(../vendor/fonts/formular.css);
 
+@import url(../blocks/root/root.css);
+@import url(../blocks/content/content.css);
+
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__info/header__info.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__geo/header__geo.css);
+@import url(../blocks/header/__city/header__city.css);
+@import url(../blocks/header/__search/header__search.css);
+@import url(../blocks/header/__favorites/header__favorites.css);
+@import url(../blocks/header/__favorites-count/header__favorites-count.css);
+@import url(../blocks/header/__enter-btn/header__enter-btn.css);

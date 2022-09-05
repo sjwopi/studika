@@ -1,0 +1,7 @@
+.header {
+    background-color: #FFF;
+    padding: 0 calc((100vw - 1280px) / 2);
+    height: 136px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Open Sans';
+}

@@ -1,0 +1,8 @@
+.header__favorites {
+    border: none;
+    width: 15px;
+    height: 15px;
+    background: url("../../../img/like.svg") center/cover no-repeat;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
