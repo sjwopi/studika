@@ -1,7 +1,7 @@
 .header__favorites-count {
     margin: 0 30px 0 0;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-device-width: 620px) {
     .header__favorites-count {
         display: none;
     }

@@ -6,12 +6,12 @@
 .header__container:last-child {
     justify-content: end;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-device-width: 1200px) {
     .header__container {
         width: 30%;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-device-width: 1000px) {
     .header__container {
         width: 100%;
         justify-content: start;
