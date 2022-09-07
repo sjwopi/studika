@@ -6,7 +6,7 @@
     cursor: pointer;
     width: 12px;
     height: 16px;
-    background: url("../../../../img/arrow.svg") center/6px 12px no-repeat;
+    background: url("../../../../img/arrow.svg") center/8px 16px no-repeat;
     position: absolute;
     z-index: 3;
 }
