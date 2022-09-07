@@ -1,0 +1,12 @@
+@media screen and (max-width: 1400px) {
+    .menu__back-gradient_left {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 170px;
+        height: 20px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0),  white);
+        z-index: 2;
+    }
+}

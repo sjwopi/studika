@@ -1,0 +1,5 @@
+.menu__arrow_orientation_left {
+    transform: rotate(180deg);
+    left: 0px;
+    top: 5px;
+}

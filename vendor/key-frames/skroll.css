@@ -1,0 +1,11 @@
+@keyframes skroll {
+    0% {
+        text-indent: 10px;
+    }
+    50% {
+        text-indent: -100px;
+    }
+    100% {
+        text-indent: 10px;
+    }
+}

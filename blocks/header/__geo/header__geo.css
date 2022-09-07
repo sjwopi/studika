@@ -3,12 +3,38 @@
     height: 32px;
     margin: 0 8px 0 0;
     background: url("../../../img/location.svg") 5px 5px / 18px no-repeat;
+    z-index: 1;
+    cursor: pointer;
     box-sizing: border-box;
     border: 1px solid #d3d3d3;
     border-radius: 50%;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .header__geo:hover {
     border-color: #f1f1f1;
     background-color: #f1f1f1;
+}
+@media screen and (max-width: 1400px) {
+    .header__geo {
+        width: 24px;
+        height: 22px;
+        background: url("../../../img/location.svg") 3px / 12px no-repeat;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header__geo {
+        width: 24px;
+        height: 21px;
+        background: url("../../../img/location.svg") 3px 3px / 12px no-repeat;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header__geo {
+        width: 28px;
+        height: 28px;
+        background: url("../../../img/location.svg") 4px 4px / 16px no-repeat;
+        position: absolute;
+        top: 22px;
+        right: 88px;
+    }
 }

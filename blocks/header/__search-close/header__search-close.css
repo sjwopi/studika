@@ -1,0 +1,13 @@
+.header__search-close {
+    display: none;
+    position: fixed;
+    right: 24px;
+    top: 32px;
+    z-index: 3;
+    border: none;
+    width: 28px;
+    height: 28px;
+    background: url("../../../img/close-btn-white.png") center/cover no-repeat;
+    filter: invert(1);
+    animation: start 1s ease-in-out forwards;
+}

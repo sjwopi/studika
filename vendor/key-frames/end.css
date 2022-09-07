@@ -1,0 +1,21 @@
+@keyframes end {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-200px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    @keyframes end {
+        from {
+            transform: translateX(0px);
+        }
+
+        to {
+            transform: translateX(-400px);
+        }
+    }
+}

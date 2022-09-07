@@ -1,0 +1,12 @@
+.header__search-btn {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: url("../../../img/search.svg") center/cover no-repeat;
+    position: absolute;
+    top: 6px;
+    right: 120px;
+}

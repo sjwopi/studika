@@ -5,3 +5,18 @@
     border-bottom: 1px solid #ddd;
     font-family: 'Open Sans';
 }
+@media screen and (max-width: 1400px) {
+    .header {
+        padding: 0 calc((100vw - 1080px) / 2);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 0 calc((100vw - 880px) / 2);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 0 32px;
+    }
+}

@@ -1,0 +1,5 @@
+.header__menu {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+}

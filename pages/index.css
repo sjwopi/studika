@@ -1,7 +1,9 @@
-
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/opensans.css);
 @import url(../vendor/fonts/formular.css);
+@import url(../vendor/key-frames/end.css);
+@import url(../vendor/key-frames/start.css);
+@import url(../vendor/key-frames/skroll.css);
 
 @import url(../blocks/root/root.css);
 @import url(../blocks/content/content.css);
@@ -12,7 +14,28 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__geo/header__geo.css);
 @import url(../blocks/header/__city/header__city.css);
+
 @import url(../blocks/header/__search/header__search.css);
+@import url(../blocks/header/__search-btn/header__search-btn.css);
+@import url(../blocks/header/__search-close/header__search-close.css);
+
 @import url(../blocks/header/__favorites/header__favorites.css);
 @import url(../blocks/header/__favorites-count/header__favorites-count.css);
 @import url(../blocks/header/__enter-btn/header__enter-btn.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__mobile-hamb/header__mobile-hamb.css);
+
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/__point/menu__point.css);
+@import url(../blocks/menu/__button/menu__button.css);
+@import url(../blocks/menu/__arrow/menu__arrow.css);
+@import url(../blocks/menu/__arrow/_orientation/menu__arrow_orienttion_left.css);
+@import url(../blocks/menu/__arrow/_orientation/menu__arrow_orientation_right.css);
+@import url(../blocks/menu/__back-gradient/menu__back-gradient_left.css);
+@import url(../blocks/menu/__back-gradient/menu__back-gradient_right.css);
+
+@import url(../blocks/back-popup/back-popup.css);
+
+
+@import url(../blocks/active/active.css);

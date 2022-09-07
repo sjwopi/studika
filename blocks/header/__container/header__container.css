@@ -6,3 +6,21 @@
 .header__container:last-child {
     justify-content: end;
 }
+@media screen and (max-width: 1200px) {
+    .header__container {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header__container {
+        width: 100%;
+        justify-content: start;
+        margin: 0 0 12px 0;
+    }
+    .header__container:last-child {
+        position: absolute;
+        right: 32px;
+        top: 20px;
+        margin: 0;
+    }
+}

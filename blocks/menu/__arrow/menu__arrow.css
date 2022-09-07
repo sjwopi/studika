@@ -1,0 +1,12 @@
+.menu__arrow {
+    display: none;
+    padding: 0;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 12px;
+    height: 16px;
+    background: url("../../../../img/arrow.svg") center/6px 12px no-repeat;
+    position: absolute;
+    z-index: 3;
+}

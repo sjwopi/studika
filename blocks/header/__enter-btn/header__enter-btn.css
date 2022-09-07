@@ -3,10 +3,16 @@
     border: 1px solid #d3d3d3;
     border-radius: 65px;
     font-size: 14px;
+    font-family: "Open Sans";
     padding: 12px 19px;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .header__enter-btn:hover {
     border-color: #f1f1f1;
     background-color: #f1f1f1;
+}
+@media screen and (max-width: 545px) {
+    .header__enter-btn {
+        display: none;
+    }
 }

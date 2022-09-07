@@ -29,3 +29,27 @@
     border: 2px solid #9db9db;
     background-position-x: 14px;
 }
+@media screen and (max-width: 1200px) {
+    .header__search {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header__search {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 545px){
+    .header__search {
+        display: none;
+        position: fixed;
+        top: 48px;
+        left: 10%;
+        right: 10%;
+        z-index: 3;
+        animation: start 1s ease-in-out forwards;
+    }
+}
+.header__search_active {
+    animation: skroll 8s ease-in-out infinite;
+}
