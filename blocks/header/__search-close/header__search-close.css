@@ -7,7 +7,7 @@
     border: none;
     width: 28px;
     height: 28px;
-    background: url("../../../img/close-btn-white.png") center/contain no-repeat fixed;
+    background: url("../../../img/close-btn-white.png") center/contain no-repeat;
     filter: invert(1);
     animation: start 1s ease-in-out forwards;
 }

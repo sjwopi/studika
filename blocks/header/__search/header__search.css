@@ -49,7 +49,7 @@
 	-webkit-appearance: none;
 	width: 28px;
 	height: 28px;
-	background: url("../../../img/close-btn.svg") center/cover no-repeat fixed;
+	background: url("../../../img/close-btn.svg") center/cover no-repeat;
 	cursor: pointer;
 }
 .header__search::placeholder {
