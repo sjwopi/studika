@@ -3,3 +3,8 @@
     display: flex;
     position: relative;
 }
+@media screen and (max-width: 1000px) {
+    .header__menu {
+        display: none;
+    }
+}

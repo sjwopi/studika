@@ -4,8 +4,3 @@
     white-space: nowrap;
     overflow: hidden;
 }
-@media screen and (max-width: 1000px) {
-    .menu {
-        display: none;
-    }
-}

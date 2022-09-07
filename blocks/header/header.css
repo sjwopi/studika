@@ -4,3 +4,8 @@
     font-family: 'Open Sans';
     background-color: #FFF;
 }
+@media screen and (max-width: 620px) {
+    .header {
+        height: 60px;
+    }
+}

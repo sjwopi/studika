@@ -21,12 +21,6 @@ function checkWidth() {
         arrowRight.classList.add('active');
         backGradientRight.classList.add('active');
     }
-    if (screenWidth <= 620) {
-        function animationNone() {
-            searchContainer.style.animation = "none";
-        }
-        searchContainer.addEventListener('click', animationNone);
-    }
 }
 function skrollMenu() {
     arrowRight.classList.toggle('active');
@@ -41,9 +35,15 @@ function searchPopUp() {
     searchPopUpClose.classList.toggle('active');
     backPopUp.classList.toggle('active');
 }
+function animationNone() {
+    searchContainer.classList.toggle('header__search_animation_none');
+}
 checkWidth();
+
 searchPopUpBtn.addEventListener('click', searchPopUp);
-searchPopUpClose.addEventListener('click', searchPopUp);
+searchContainer.addEventListener('click', animationNone);
+searchPopUpClose.addEventListener('click', function two() {searchPopUp; animationNone;});
+
 
 arrowRight.addEventListener('click', skrollMenu);
 arrowLeft.addEventListener('click', skrollMenu);

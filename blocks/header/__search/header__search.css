@@ -66,3 +66,6 @@
     border: 2px solid #9db9db;
     background-position-x: 14px;
 }
+.header__search_animation_none {
+    animation: none;
+}
