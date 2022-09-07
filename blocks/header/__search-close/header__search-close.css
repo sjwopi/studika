@@ -2,12 +2,12 @@
     display: none;
     position: fixed;
     right: 16px;
-    top: 12px;
+    top: 11px;
     z-index: 3;
     border: none;
     width: 28px;
     height: 28px;
-    background: url("../../../img/close-btn-white.png") center/cover no-repeat;
+    background: url("../../../img/close-btn-white.png") center/contain no-repeat fixed;
     filter: invert(1);
     animation: start 1s ease-in-out forwards;
 }

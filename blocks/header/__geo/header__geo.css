@@ -5,7 +5,6 @@
     background: url("../../../img/location.svg") 5px 5px / 18px no-repeat;
     z-index: 1;
     cursor: pointer;
-    box-sizing: border-box;
     border: 1px solid #d3d3d3;
     border-radius: 50%;
     transition: all .1s ease-in-out;

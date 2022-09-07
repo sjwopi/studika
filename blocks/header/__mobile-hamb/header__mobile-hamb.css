@@ -8,7 +8,7 @@
     height: 32px;
     background: url("../../../img/hamburger.svg") center/cover no-repeat;
 }
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .header__mobile-hamb {
         display: block;
     }
