@@ -13,45 +13,49 @@
 <body class="root">
 
     <header class="header">
-        <div class="header__info">
+        <div class="header__content">
+            <div class="header__info">
 
-            <div class="header__container">
-                <img src="img/logo.svg" class="header__logo">
-                <button type="button" class="header__geo"></button>
-                <p class="header__city">Любой регион</p>
+                <div class="header__container">
+                    <img src="img/logo.svg" class="header__logo">
+                    <button type="button" class="header__geo"></button>
+                    <p class="header__city">Любой регион</p>
+                </div>
+
+                <input type="search" class="header__search"
+                    placeholder="Учебное заведение, специальность или профессия">
+                <button type="button" class="header__search-close"></button>
+
+                <div class="header__container_last">
+                    <button type="button" class="header__search-btn"></button>
+                    <button type="button" class="header__favorites"></button>
+                    <p class="header__favorites-count">1</p>
+
+                    <button type="button" class="header__enter-btn">Войти</button>
+
+                    <buttom type="buttun" class="header__mobile-hamb"></buttom>
+                </div>
+
             </div>
-            
-            <input type="search" class="header__search" placeholder="Учебное заведение, специальность или профессия">
-            <button type="button" class="header__search-close"></button>
-
-            <div class="header__container_last">
-                <button type="button" class="header__search-btn"></button>
-                <button type="button" class="header__favorites"></button>
-                <p class="header__favorites-count">1</p>
-
-                <button type="button" class="header__enter-btn">Войти</button>
-
-                <buttom type="buttun" class="header__mobile-hamb"></buttom>
-            </div>
-
+            <nav class="header__menu menu">
+                <div class="menu__back-gradient_left"></div>
+                <button type="button" class="menu__arrow menu__arrow_orientation_left left-arrow"></button>
+                <ul class="menu__list menu__list_skroll-start">
+                    <li class="menu__point"><button type="button" class="menu__button">Вузы</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Колледжи</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Техникумы</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Училища</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Специальности</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Профессии</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Отзывы</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Учебные заведения</button></li>
+                    <li class="menu__point"><button type="button" class="menu__button">Тест на профориентацию</button>
+                    </li>
+                </ul>
+                <div class="menu__back-gradient_right"></div>
+                <button type="button" class="menu__arrow menu__arrow_orientation_right right-arrow"></button>
+            </nav>
         </div>
-        <nav class="header__menu menu">
-            <div class="menu__back-gradient_left"></div>
-            <button type="button" class="menu__arrow menu__arrow_orientation_left left-arrow"></button>
-            <ul class="menu__list menu__list_skroll-start">
-                <li class="menu__point"><button type="button" class="menu__button">Вузы</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Колледжи</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Техникумы</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Училища</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Специальности</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Профессии</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Отзывы</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Учебные заведения</button></li>
-                <li class="menu__point"><button type="button" class="menu__button">Тест на профориентацию</button></li>
-            </ul>
-            <div class="menu__back-gradient_right"></div>
-            <button type="button" class="menu__arrow menu__arrow_orientation_right right-arrow"></button>
-        </nav>
     </header>
 
     <main class="content">

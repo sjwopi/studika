@@ -1,14 +1,6 @@
 .header {
-    max-width: 1280px;
-    padding: 0 calc((100% - 1280px) / 2);
     height: 136px;
     border-bottom: 1px solid #ddd;
     font-family: 'Open Sans';
     background-color: #FFF;
-}
-@media screen and (max-device-width: 400px) {
-    .header {
-        margin: 0 auto;
-        width: 300px;
-    }
 }
