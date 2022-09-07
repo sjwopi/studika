@@ -8,5 +8,10 @@
     background: url("../../../img/search.svg") center/cover no-repeat;
     position: absolute;
     top: 6px;
-    right: 120px;
+    right: 65px;
+}
+@media screen and (max-width: 500px) {
+    .header__search-btn {
+        right: 120px;
+    }
 }
