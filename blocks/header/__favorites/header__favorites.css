@@ -1,12 +1,14 @@
 .header__favorites {
     border: none;
-    width: 15px;
-    height: 15px;
-    background: url("../../../img/like.svg") center/cover no-repeat;
-    margin: 0 10px 0 0;
+    width: 50px;
+    height: 16px;
+    background: url("../../../img/like.svg") left / 16px no-repeat;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-device-width: 620px) {
+@media screen and (max-width: 620px) {
     .header__favorites {
         display: none;
     }

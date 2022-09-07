@@ -4,8 +4,13 @@
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .header__info {
-        flex-direction: column;
+        padding: 16px 0;
+    }
+}
+@media screen and (max-width: 620px) {
+    .header__info {
+        justify-content: end;
     }
 }

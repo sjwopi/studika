@@ -3,7 +3,15 @@
     margin: 0 16px 0 0;
     transform: translateY(-3px);
 }
-@media screen and (max-device-width: 400px) {
+@media screen and (max-width: 620px) {
+    .header__logo {
+        position: fixed;
+        top: 20px;
+        left: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .header__logo {
         width: 66px;
     }

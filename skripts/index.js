@@ -21,6 +21,12 @@ function checkWidth() {
         arrowRight.classList.add('active');
         backGradientRight.classList.add('active');
     }
+    if (screenWidth <= 620) {
+        function animationNone() {
+            searchContainer.style.animation = "none";
+        }
+        searchContainer.addEventListener('click', animationNone);
+    }
 }
 function skrollMenu() {
     arrowRight.classList.toggle('active');

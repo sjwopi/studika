@@ -13,10 +13,3 @@
         display: block;
     }
 }
-@media screen and (max-width: 620px) {
-    .header__mobile-hamb {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}

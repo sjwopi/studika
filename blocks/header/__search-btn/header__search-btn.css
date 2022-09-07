@@ -6,18 +6,10 @@
     padding: 0;
     cursor: pointer;
     background: url("../../../img/search.svg") center/cover no-repeat;
-    position: absolute;
-    top: 6px;
-    right: 65px;
 }
 
-@media screen and (max-device-width: 620px) {
+@media screen and (max-width: 620px) {
     .header__search-btn {
         display: block;
-    }
-}
-@media screen and (max-device-width: 500px) {
-    .header__search-btn {
-        right: 120px;
     }
 }
