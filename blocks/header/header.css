@@ -6,10 +6,9 @@
     font-family: 'Open Sans';
     background-color: #FFF;
 }
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-device-width: 400px) {
     .header {
-        padding: 0 5%;
-        margin: 0;
-        max-width: 90%;
+        margin: 0 auto;
+        width: 300px;
     }
 }
