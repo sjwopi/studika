@@ -34,6 +34,7 @@
     .header__search {
         max-width: 40%;
         min-width: 40%;
+        animation: skroll 8s ease-in-out infinite;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -41,9 +42,10 @@
         max-width: 100%;
         min-width: 80%;
         margin: 12px 0 0 0;
+        animation: none;
     }
 }
-@media screen and (max-width: 545px){
+@media screen and (max-width: 620px){
     .header__search {
         display: none;
         position: fixed;
@@ -51,9 +53,11 @@
         left: 12px;
         right: 12px;
         z-index: 3;
-        animation: skroll 12s ease-in-out infinite, start 1s ease-in-out forwards;
+        animation: start 1s ease-in-out forwards;
     }
 }
-.header__search_active {
-    animation: skroll 8s ease-in-out infinite;
+@media screen and (max-width: 460px){
+    .header__search {
+        animation: skroll 12s ease-in-out infinite, start 1s ease-in-out forwards;
+    }
 }

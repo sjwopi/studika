@@ -6,7 +6,7 @@
     margin: 0 10px 0 0;
     padding: 0;
 }
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 620px) {
     .header__favorites {
         display: none;
     }

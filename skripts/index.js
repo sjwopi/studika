@@ -20,15 +20,6 @@ function checkWidth() {
     if (screenWidth <= 1400) {
         arrowRight.classList.add('active');
         backGradientRight.classList.add('active');
-    } 
-    if (screenWidth <= 1000) {
-        hamburger.classList.add('active');
-    }
-    if (screenWidth <= 620 && screenWidth >= 546) {
-        searchContainer.classList.add('header__search_active');
-    }
-    if (screenWidth <= 545) {
-        searchPopUpBtn.classList.add('active');
     }
 }
 function skrollMenu() {

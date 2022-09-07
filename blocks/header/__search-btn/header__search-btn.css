@@ -10,6 +10,12 @@
     top: 6px;
     right: 65px;
 }
+
+@media screen and (max-width: 620px) {
+    .header__search-btn {
+        display: block;
+    }
+}
 @media screen and (max-width: 500px) {
     .header__search-btn {
         right: 120px;
