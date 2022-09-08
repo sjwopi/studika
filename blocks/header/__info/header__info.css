@@ -12,6 +12,8 @@
 }
 @media screen and (max-width: 620px) {
     .header__info {
-        justify-content: end;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
