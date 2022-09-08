@@ -42,7 +42,7 @@ checkWidth();
 
 searchPopUpBtn.addEventListener('click', searchPopUp);
 searchContainer.addEventListener('click', animationNone);
-searchPopUpClose.addEventListener('click', function two() {searchPopUp; animationNone;});
+searchPopUpClose.addEventListener('click', function two() {searchPopUp(); animationNone();});
 
 
 arrowRight.addEventListener('click', skrollMenu);

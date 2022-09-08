@@ -3,11 +3,12 @@
     position: fixed;
     right: 16px;
     top: 11px;
-    z-index: 3;
     border: none;
     width: 28px;
     height: 28px;
     background: url("../../../img/close-btn-white.png") center/contain no-repeat;
+    cursor: pointer;
+    z-index: 3;
     filter: invert(1);
     animation: start 1s ease-in-out forwards;
 }
