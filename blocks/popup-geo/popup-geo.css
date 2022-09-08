@@ -1,0 +1,20 @@
+.popup-geo {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 20%;
+    width: 350px;
+    height: 230px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #9db9db;
+    border-radius: 12px;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+}
+@media screen and (max-width: 620px) {
+    .popup-geo {
+        width: 90%;
+        top: 80px;
+        left: 5%;
+    }
+}

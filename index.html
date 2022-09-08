@@ -19,8 +19,8 @@
                 <img src="img/logo.svg" class="header__logo">
                 <button type="button" class="header__geo">Любой регион</button>
 
-                <input type="search" class="header__search" placeholder="Учебное заведение, специальность или профессия">
-                <button type="button" class="header__search-close"></button>
+                <input type="search" class="header__search search" placeholder="Учебное заведение, специальность или профессия">
+                <button type="button" class="header__search-close close-btn"></button>
                 <button type="button" class="header__search-btn"></button>
 
                 <button type="button" class="header__favorites">
@@ -30,7 +30,7 @@
                 <button type="button" class="header__enter-btn">Войти</button>
                 <buttom type="buttun" class="header__mobile-hamb"></buttom>
             </div>
-
+            <!-- Меню шапки -->
             <nav class="header__menu menu">
                 <div class="menu__back-gradient_left"></div>
                 <button type="button" class="menu__arrow menu__arrow_orientation_left left-arrow"></button>
@@ -57,13 +57,17 @@
 
     <footer class="footer">
     </footer>
+    <!-- Попап изменения геолокации -->
+    <div class="popup-geo">
+        <div class="popup-geo__container">
+            <input type="search" placeholder="Москва" class="popup-geo__search search">
+            <button type="button" class="popup-geo__select-button">Выбрать</button>
+            <button type="button" class="popup-geo__close-button close-btn"></button>
+        </div>
+    </div>
+
     <div class="back-popup"></div>
     <script src="skripts/index.js"></script>
 </body>
 
 </html>
-<!--                 <div style="display: none;" class="header__profile">
-                    <p class="profile__name"></p>
-                    <img src="" alt="аватар" class="profile__avatar">
-                </div>
- -->
