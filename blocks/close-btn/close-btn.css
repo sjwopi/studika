@@ -1,8 +1,5 @@
 .close-btn {
     display: none;
-    position: fixed;
-    right: 16px;
-    top: 11px;
     border: none;
     width: 28px;
     height: 28px;

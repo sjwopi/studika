@@ -1,3 +1,5 @@
 .popup-geo__close-button {
-    
+    position: absolute;
+    right: -36px;
+    top: -24px;
 }

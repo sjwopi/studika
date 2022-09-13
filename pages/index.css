@@ -42,5 +42,6 @@
 @import url(../blocks/popup-geo/__container/popup-geo__container.css);
 @import url(../blocks/popup-geo/__search/popup-geo__search.css);
 @import url(../blocks/popup-geo/__select-button/popup-geo__select-button.css);
+@import url(../blocks/popup-geo/__close-button/popup-geo__close-button.css);
 
 @import url(../blocks/active/active.css);
