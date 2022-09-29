@@ -1,10 +1,11 @@
 .header__favorites-count {
-    width: 10px;
-    margin: 0;
-    transform: translateY(-1px);
+  width: 10px;
+  margin: 0;
+  transform: translateY(-1px);
 }
+
 @media screen and (max-width: 620px) {
-    .header__favorites-count {
-        display: none;
-    }
+  .header__favorites-count {
+    display: none;
+  }
 }

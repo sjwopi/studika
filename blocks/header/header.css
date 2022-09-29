@@ -1,11 +1,12 @@
 .header {
-    height: 136px;
-    border-bottom: 1px solid #ddd;
-    font-family: 'Open Sans';
-    background-color: #FFF;
+  height: 136px;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Open Sans';
+  background-color: #FFF;
 }
+
 @media screen and (max-width: 620px) {
-    .header {
-        height: 60px;
-    }
+  .header {
+    height: 60px;
+  }
 }

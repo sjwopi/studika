@@ -22,40 +22,40 @@ let popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
 let popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
 
 function checkWidth() {
-    if (screenWidth <= 1400) {
-        arrowRight.classList.add('active');
-        backGradientRight.classList.add('active');
-    }
+  if (screenWidth <= 1400) {
+    arrowRight.classList.add('active');
+    backGradientRight.classList.add('active');
+  }
 }
 function skrollMenu() {
-    arrowRight.classList.toggle('active');
-    backGradientRight.classList.toggle('active');
-    arrowLeft.classList.toggle('active');
-    backGradientLeft.classList.toggle('active');
-    menuList.classList.toggle('menu__list_skroll-end');
-    menuList.classList.toggle('menu__list_skroll-start')
+  arrowRight.classList.toggle('active');
+  backGradientRight.classList.toggle('active');
+  arrowLeft.classList.toggle('active');
+  backGradientLeft.classList.toggle('active');
+  menuList.classList.toggle('menu__list_skroll-end');
+  menuList.classList.toggle('menu__list_skroll-start')
 }
 function searchPopUp() {
-    searchContainer.classList.toggle('active');
-    searchPopUpClose.classList.toggle('active');
-    backPopUp.classList.toggle('active');
+  searchContainer.classList.toggle('active');
+  searchPopUpClose.classList.toggle('active');
+  backPopUp.classList.toggle('active');
 }
 function animationNone() {
-    searchContainer.classList.toggle('header__search_animation_none');
+  searchContainer.classList.toggle('header__search_animation_none');
 }
 function geoPopUp() {
-    popUpGeo.classList.toggle('active');
-    popUpGeoCloseBtn.classList.toggle('active');
-    backPopUp.classList.toggle('active');
+  popUpGeo.classList.toggle('active');
+  popUpGeoCloseBtn.classList.toggle('active');
+  backPopUp.classList.toggle('active');
 }
-checkWidth();popUpGeoSelectBtn
+checkWidth(); popUpGeoSelectBtn
 geoBtn.addEventListener('click', geoPopUp);
 popUpGeoSelectBtn.addEventListener('click', geoPopUp);
 popUpGeoCloseBtn.addEventListener('click', geoPopUp);
 
 searchPopUpBtn.addEventListener('click', searchPopUp);
 searchContainer.addEventListener('click', animationNone);
-searchPopUpClose.addEventListener('click', function two() {searchPopUp(); animationNone();});
+searchPopUpClose.addEventListener('click', function two() { searchPopUp(); animationNone(); });
 
 arrowRight.addEventListener('click', skrollMenu);
 arrowLeft.addEventListener('click', skrollMenu);

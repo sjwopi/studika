@@ -1,16 +1,18 @@
 .lead__container {
-    width: сalc(100% - 48px);
-    height: 320px;
-    padding: 24px;
-    background: url("../../../img/photo-uni.jpg") center/cover no-repeat;
+  width: сalc(100% - 48px);
+  height: 320px;
+  padding: 24px;
+  background: url("../../../img/photo-uni.jpg") center/cover no-repeat;
 }
+
 @media screen and (max-width: 550px) {
-    .lead__container {
-        height: 130px;
-    }
+  .lead__container {
+    height: 130px;
+  }
 }
+
 @media screen and (max-width: 400px) {
-    .lead__container {
-        height: 90px;
-    }
+  .lead__container {
+    height: 90px;
+  }
 }

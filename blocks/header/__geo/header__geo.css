@@ -1,45 +1,50 @@
 .header__geo {
-    width: 200px;
-    height: 32px;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background: url("../../../img/location.svg") 5px 5px / 18px no-repeat;
-    z-index: 1;
-    cursor: pointer;
-    border: 1px solid #d3d3d3;
-    border-radius: 50px;
-    transition: all .1s ease-in-out;
+  width: 200px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: url("../../../img/location.svg") 5px 5px / 18px no-repeat;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  border-radius: 50px;
+  transition: all .1s ease-in-out;
 }
+
 .header__geo:hover {
-    border-color: #f1f1f1;
-    background-color: #f1f1f1;
+  border-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
+
 @media screen and (max-width: 1400px) {
-    .header__geo {
-        width: 150px;
-        padding: 0 12px 0 0;
-        text-align: end;
-    }
+  .header__geo {
+    width: 150px;
+    padding: 0 12px 0 0;
+    text-align: end;
+  }
 }
+
 @media screen and (max-width: 1000px) {
-    .header__geo {
-        margin: 0 40% 0 0;
-    }
+  .header__geo {
+    margin: 0 40% 0 0;
+  }
 }
+
 @media screen and (max-width: 800px) {
-    .header__geo {
-        margin: 0 20% 0 0;
-    }
+  .header__geo {
+    margin: 0 20% 0 0;
+  }
 }
+
 @media screen and (max-width: 620px) {
-    .header__geo {
-        color: rgba(255, 255, 255, 0);
-        width: 32px;
-        margin: 0 8px 0 0;
-    }
+  .header__geo {
+    color: rgba(255, 255, 255, 0);
+    width: 32px;
+    margin: 0 8px 0 0;
+  }
 }

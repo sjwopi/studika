@@ -1,11 +1,11 @@
 .back-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background-color: rgba(31, 31, 31, 0.8);
-    transition: all .5s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(31, 31, 31, 0.8);
+  transition: all .5s;
 }
