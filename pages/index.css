@@ -36,6 +36,15 @@
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_left.css);
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_right.css);
 
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__crump/lead__crump.css);
+@import url(../blocks/lead/__crump-item/lead__crump-item.css);
+@import url(../blocks/lead/__content/lead__content.css);
+@import url(../blocks/lead/__container/lead__container.css);
+@import url(../blocks/lead/__logo-uni/lead__logo-uni.css);
+@import url(../blocks/lead/__btn/lead__btn.css);
+@import url(../blocks/lead/__crump-cansel/lead__crump-cansel.css);
+
 @import url(../blocks/back-popup/back-popup.css);
 
 @import url(../blocks/popup-geo/popup-geo.css);

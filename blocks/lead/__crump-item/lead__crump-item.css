@@ -1,0 +1,17 @@
+.lead__crump-item {
+    color: #767676;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+}
+.lead__crump-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -18px;
+    width: 8px;
+    height: 10px;
+    background: url("../../../img/arrow-btn.svg") center/contain no-repeat;
+    transform: rotate(90deg);
+}

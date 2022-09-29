@@ -2,7 +2,7 @@
     display: none;
     position: fixed;
     top: 100px;
-    left: 20%;
+    left: 18%;
     width: 350px;
     height: 230px;
     background-color: rgb(255, 255, 255);
@@ -11,10 +11,15 @@
     transition: all .3s ease-in-out;
     z-index: 3;
 }
+@media screen and (max-width: 1620px) {
+    .popup-geo {
+        left: 12%;
+    }
+}
 @media screen and (max-width: 620px) {
     .popup-geo {
-        width: 90%;
+        width: 66%;
         top: 80px;
-        left: 5%;
+        left: 17%;
     }
 }

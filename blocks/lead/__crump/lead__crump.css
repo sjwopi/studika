@@ -1,0 +1,19 @@
+.lead__crump {
+    margin: 0 0 32px;
+    padding: 0;
+    max-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .lead__crump {
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .lead__crump {
+        display: none;
+    }
+}

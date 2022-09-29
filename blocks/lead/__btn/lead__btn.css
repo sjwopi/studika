@@ -1,0 +1,43 @@
+.lead__btn {
+    height: 48px;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Formular";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-align: center;
+}
+.lead__btn_feedback {
+    background: rgba(6, 86, 180, 1);
+    color: rgba(223, 233, 245, 1);
+    right: 340px;
+}
+.lead__btn_chance {
+    background: rgba(223, 233, 245, 1);
+    color: rgba(6, 86, 180, 1);
+    right: 20px;
+}
+@media screen and (max-width: 550px) {
+    .lead__btn {
+        height: 40px;
+        left: 20px;
+        bottom: 140px;
+        font-size: 11px;
+        padding: 0 12px;
+    }
+    .lead__btn_feedback {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .lead__btn {
+        bottom: 20px;
+    }
+}

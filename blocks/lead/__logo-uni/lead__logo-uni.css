@@ -1,0 +1,14 @@
+.lead__logo-uni {
+    height: 40px;
+    width: 40px;
+    background: url("../../../img/logo-uni.svg") center/cover no-repeat;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+@media screen and (max-width: 550px) {
+    .lead__logo-uni{
+        top: 8px;
+        left: 8px;
+    }
+}
