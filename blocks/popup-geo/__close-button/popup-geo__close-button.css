@@ -2,7 +2,6 @@
   position: absolute;
   right: -36px;
   top: -24px;
-  filter: grayscale(100%);
   opacity: .65;
 }
 @media screen and (max-width: 550px) {

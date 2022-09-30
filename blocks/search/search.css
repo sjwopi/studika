@@ -5,7 +5,7 @@
   padding: 0 8px 0 45px;
   border: none;
   border-radius: 24px;
-  background: url("../../../img/search.svg") 16px / 17px no-repeat;
+  background: url("../../../img/Search.svg") 16px / 17px no-repeat;
   background-color: #F1F1F1;
   outline: none;
   font-weight: 400;
@@ -18,7 +18,7 @@
   -webkit-appearance: none;
   width: 28px;
   height: 28px;
-  background: url("../../../img/close-btn.svg") center/cover no-repeat;
+  background: url("../../../img/closebtn.svg") center/cover no-repeat;
   cursor: pointer;
 }
 
