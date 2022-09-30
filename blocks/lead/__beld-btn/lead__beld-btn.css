@@ -1,0 +1,17 @@
+.lead__beld-btn {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("../../../img/belt.svg") center/contain no-repeat;
+  margin: 0 18px 0 0;
+}
+@media screen and (max-width: 1150px) {
+  .lead__beld-btn {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .lead__beld-btn {
+    display: none;
+  }
+}

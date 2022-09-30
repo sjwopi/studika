@@ -17,6 +17,9 @@ let arrowLeft = menu.querySelector('.left-arrow');
 let backGradientRight = menu.querySelector('.menu__back-gradient_right');
 let backGradientLeft = menu.querySelector('.menu__back-gradient_left');
 
+let lead = document.querySelector('.lead');
+let leadLikeBtn = lead.querySelector('.lead__like-btn');
+
 let popUpGeo = document.querySelector('.popup-geo');
 let popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
 let popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
@@ -25,6 +28,10 @@ function checkWidth() {
   if (screenWidth <= 1400) {
     arrowRight.classList.add('active');
     backGradientRight.classList.add('active');
+  }
+  if (screenWidth <= 550) {
+    leadLikeBtn.textContent = '';
+    lead.querySelector('.lead__container').append(leadLikeBtn);
   }
 }
 function skrollMenu() {

@@ -4,7 +4,11 @@
   padding: 24px;
   background: url("../../../img/photo-uni.jpg") center/cover no-repeat;
 }
-
+@media screen and (max-width: 700px) {
+  .lead__container {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 550px) {
   .lead__container {
     height: 130px;

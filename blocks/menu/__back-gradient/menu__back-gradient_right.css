@@ -1,12 +1,12 @@
 @media screen and (max-width: 1400px) {
-    .menu__back-gradient_right {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 5px;
-        width: 170px;
-        height: 20px;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0),  white);
-        z-index: 2;
-    }
+  .menu__back-gradient_right {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 170px;
+    height: 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), white);
+    z-index: 2;
+  }
 }

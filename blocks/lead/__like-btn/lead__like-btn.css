@@ -1,0 +1,38 @@
+.lead__like-btn {
+  cursor: pointer;
+  width: 145px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #767676;
+  border-radius: 20px;
+  background: url("../../../img/like.svg") 10px 11px/16px no-repeat;
+  margin: -12px 18px 0 0;
+  padding: 0 0 0 20px;
+  transition: all .2s ease-in-out;
+}
+.lead__like-btn:hover {
+  border-color: #f1f1f1;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 1150px) {
+  .lead__like-btn {
+    margin: 0 18px 0 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .lead__like-btn {
+    width: 40px;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    position: absolute;
+    bottom: 230px;
+    right: 55px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lead__like-btn {
+    bottom: 271px;
+  }
+}

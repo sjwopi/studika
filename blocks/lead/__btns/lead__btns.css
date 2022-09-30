@@ -1,0 +1,19 @@
+.lead__btns {
+  padding: 16px 0 0 0;
+  display: flex;
+}
+
+@media screen and (max-width: 1150px) {
+  .lead__btns {
+    align-items: center;
+    position: absolute;
+    bottom: 45px;
+    right: 18px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .lead__btns {
+    bottom: 16px;
+  }
+}
+

@@ -9,9 +9,9 @@
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-display: swap;
-  src: url("../../fonts/OpenSans/OpenSans-ExtraBold.woff2?v=3.19") format("woff2");
+  src: url("../../fonts/OpenSans/OpenSans-SemiBold.woff2?v=3.19") format("woff2");
 }
 
 @font-face {

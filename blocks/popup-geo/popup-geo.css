@@ -1,25 +1,27 @@
 .popup-geo {
-    display: none;
-    position: fixed;
-    top: 100px;
-    left: 18%;
-    width: 350px;
-    height: 230px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #9db9db;
-    border-radius: 12px;
-    transition: all .3s ease-in-out;
-    z-index: 3;
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 18%;
+  width: 350px;
+  height: 230px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #9db9db;
+  border-radius: 12px;
+  transition: all .3s ease-in-out;
+  z-index: 3;
 }
+
 @media screen and (max-width: 1620px) {
-    .popup-geo {
-        left: 12%;
-    }
+  .popup-geo {
+    left: 12%;
+  }
 }
+
 @media screen and (max-width: 620px) {
-    .popup-geo {
-        width: 66%;
-        top: 80px;
-        left: 17%;
-    }
+  .popup-geo {
+    width: 66%;
+    top: 80px;
+    left: 17%;
+  }
 }

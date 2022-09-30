@@ -1,0 +1,25 @@
+.lead__share-btn {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("../../../img/Share.svg") center/contain no-repeat;
+}
+
+@media screen and (max-width: 550px) {
+  .lead__share-btn {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../../../img/Share.svg") center/20px no-repeat;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    position: absolute;
+    bottom: 214px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lead__share-btn {
+    bottom: 255px;
+  }
+}

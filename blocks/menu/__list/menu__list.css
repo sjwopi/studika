@@ -1,16 +1,17 @@
 .menu__list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0 16px 0 16px;
-    margin: 0;
-    position: relative;
-    transition: all .4s ease-in-out;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 16px;
+  margin: 0;
+  position: relative;
+  transition: all .4s ease-in-out;
 }
 
 .menu__list_skroll-end {
-    animation: end 1s ease-in-out forwards;
+  animation: end 1s ease-in-out forwards;
 }
+
 .menu__list_skroll-start {
-    animation: start 1s ease-in-out forwards;
+  animation: start 1s ease-in-out forwards;
 }
