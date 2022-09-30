@@ -57,6 +57,7 @@
 @import url(../blocks/back-popup/back-popup.css);
 
 @import url(../blocks/popup-geo/popup-geo.css);
+@import url(../blocks/popup-geo/__back/popup-geo__back.css);
 @import url(../blocks/popup-geo/__container/popup-geo__container.css);
 @import url(../blocks/popup-geo/__search/popup-geo__search.css);
 @import url(../blocks/popup-geo/__select-button/popup-geo__select-button.css);

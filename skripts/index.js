@@ -1,28 +1,29 @@
 const screenWidth = window.screen.width;
 
 
-let backPopUp = document.querySelector('.back-popup');
+const backPopUp = document.querySelector('.back-popup');
 
-let header = document.querySelector('.header');
-let hamburger = header.querySelector('.header__mobile-hamb');
-let searchContainer = header.querySelector('.header__search');
-let searchPopUpBtn = header.querySelector('.header__search-btn');
-let searchPopUpClose = header.querySelector('.header__search-close');
-let geoBtn = header.querySelector('.header__geo');
+const header = document.querySelector('.header');
+const hamburger = header.querySelector('.header__mobile-hamb');
+const searchContainer = header.querySelector('.header__search');
+const searchPopUpBtn = header.querySelector('.header__search-btn');
+const searchPopUpClose = header.querySelector('.header__search-close');
+const geoBtn = header.querySelector('.header__geo');
 
-let menu = document.querySelector('.menu');
-let menuList = menu.querySelector('.menu__list');
-let arrowRight = menu.querySelector('.right-arrow');
-let arrowLeft = menu.querySelector('.left-arrow');
-let backGradientRight = menu.querySelector('.menu__back-gradient_right');
-let backGradientLeft = menu.querySelector('.menu__back-gradient_left');
+const menu = document.querySelector('.menu');
+const menuList = menu.querySelector('.menu__list');
+const arrowRight = menu.querySelector('.right-arrow');
+const arrowLeft = menu.querySelector('.left-arrow');
+const backGradientRight = menu.querySelector('.menu__back-gradient_right');
+const backGradientLeft = menu.querySelector('.menu__back-gradient_left');
 
-let lead = document.querySelector('.lead');
-let leadLikeBtn = lead.querySelector('.lead__like-btn');
+const lead = document.querySelector('.lead');
+const leadLikeBtn = lead.querySelector('.lead__like-btn');
 
-let popUpGeo = document.querySelector('.popup-geo');
-let popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
-let popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
+const popUpGeo = document.querySelector('.popup-geo');
+const popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
+const popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
+const geoBackPopUp = document.querySelector('.popup-geo__back');
 
 function checkWidth() {
   if (screenWidth <= 1400) {
@@ -53,6 +54,7 @@ function animationNone() {
 function geoPopUp() {
   popUpGeo.classList.toggle('active');
   popUpGeoCloseBtn.classList.toggle('active');
+  geoBackPopUp.classList.toggle('active');
   backPopUp.classList.toggle('active');
 }
 checkWidth(); popUpGeoSelectBtn

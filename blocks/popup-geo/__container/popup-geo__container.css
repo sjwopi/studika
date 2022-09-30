@@ -1,9 +1,18 @@
 .popup-geo__container {
   width: 90%;
-  height: 87%;
+  height: 78%;
   margin: 4% 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .popup-geo__container {
+    height: 85%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .popup-geo__container {
+    height: 90%;
+  }
 }

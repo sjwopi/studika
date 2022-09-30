@@ -2,3 +2,8 @@
   width: 100%;
   height: 32px;
 }
+@media screen and (max-width: 550px) {
+  .popup-geo__search {
+    width: 90%;
+  }
+}
