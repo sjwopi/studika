@@ -1,0 +1,25 @@
+.mobile-hamb__button {
+  margin: 0 0 12px 0;
+  min-width: 200px;
+  max-width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  border-radius: 5px;
+}
+.mobile-hamb__button_child {
+  display: none;
+  margin: 0 0 12px 30px;
+  min-width: 170px;
+  max-width: 170px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  border-radius: 5px;
+}
+.mobile-hamb__link {
+  text-decoration: none;
+  color: #666;
+}

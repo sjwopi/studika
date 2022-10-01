@@ -1,0 +1,17 @@
+.nav-menu {
+  max-width: fit-content;
+  position: sticky;
+  top: 28px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1400px) {
+  .nav-menu {
+    left: 32px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-menu {
+    display: none;
+  }
+}

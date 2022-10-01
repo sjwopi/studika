@@ -36,6 +36,11 @@
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_left.css);
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_right.css);
 
+@import url(../blocks/mobile-hamb/mobile-hamb.css);
+@import url(../blocks/mobile-hamb/__list/mobile-hamb__list.css);
+@import url(../blocks/mobile-hamb/__button/mobile-hamb__button.css);
+@import url(../blocks/mobile-hamb/__close-btn/mobile-hamb__close-btn.css);
+
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__crump/lead__crump.css);
 @import url(../blocks/lead/__crump-item/lead__crump-item.css);
@@ -51,8 +56,11 @@
 @import url(../blocks/lead/__list-item/lead__list-item.css);
 @import url(../blocks/lead/__btns/lead__btns.css);
 @import url(../blocks/lead/__like-btn/lead__like-btn.css);
-@import url(../blocks/lead/__beld-btn/lead__beld-btn.css);
 @import url(../blocks/lead/__share-btn/lead__share-btn.css);
+
+@import url(../blocks/nav-menu/nav-menu.css);
+@import url(../blocks/nav-menu/__item/nav-menu__item.css);
+@import url(../blocks/container/container.css);
 
 @import url(../blocks/back-popup/back-popup.css);
 

@@ -36,7 +36,6 @@
         <button type="button" class="menu__arrow menu__arrow_orientation_left left-arrow"></button>
         <ul class="menu__list menu__list_skroll-start">
           <li class="menu__point"><button type="button" class="menu__button">Вузы</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Колледжи</button></li>
           <li class="menu__point"><button type="button" class="menu__button">Техникумы</button></li>
           <li class="menu__point"><button type="button" class="menu__button">Училища</button></li>
           <li class="menu__point"><button type="button" class="menu__button">Специальности</button></li>
@@ -53,7 +52,7 @@
   </header>
 
   <main class="content">
-    <section class="lead">
+    <section class="lead" id="lead">
       <button type="button" class="lead__crump-cansel">Назад</button>
       <ul class="lead__crump">
         <li class="lead__crump-item">Москва</li>
@@ -63,11 +62,13 @@
       </ul>
 
       <div class="lead__content">
+        <!-- Секция с фото университета -->
         <div class="lead__container">
           <img src="img/logo-uni.svg" class="lead__logo-uni"></ш>
           <button type="button" class="lead__btn lead__btn_feedback">оставить отзыв</button>
           <button type="button" class="lead__btn lead__btn_chance">проверить шансы поступить</button>
         </div>
+        <!-- Секция с информацией об университете -->
         <div class="lead__description">
           <div>
             <h1 class="lead__title">Московский государственный технический университет имени Н.Э.Баумана</h1>
@@ -79,19 +80,56 @@
           </div>
           <div class="lead__btns">
             <button type="button" class="lead__like-btn">В Избранное</button>
-            <button type="button" class="lead__beld-btn"></button>
             <button type="button" class="lead__share-btn"></button>
           </div>
         </div>
       </div>
-
-
+    </section>
+  <section style="height: fit-content; padding: 28px 0 0 0;">
+    <nav class="nav-menu">
+      <a href="#lead" class="nav-menu__item">Основная информация</a>
+      <a href="#" class="nav-menu__item">Специальности</a>
+      <a href="#" class="nav-menu__item">Об университете</a>
+      <a href="#" class="nav-menu__item">Контакты</a>
+      <a href="#" class="nav-menu__item">Отзывы</a>
+      <a href="#" class="nav-menu__item">Преподователи</a>
+      <a href="#" class="nav-menu__item">Профессии</a>
+      <a href="#" class="nav-menu__item">Новости</a>
+      <a href="#" class="nav-menu__item">Задать вопрос</a>
+      <a href="#" class="nav-menu__item">Часто задаваемые вопросы</a>
+    </nav>
+    <section class="container">
 
     </section>
+
+
+    <div style="height: 2000px"></div>
+  </section>
+
   </main>
 
-  <footer class="footer" style="height: 1000px">
+  <footer class="footer">
   </footer>
+  <!-- Попап mobile-hamb -->
+  <div class="mobile-hamb">
+    <ul class="menu__list mobile-hamb__list">
+      <li class="menu__point">
+        <button type="button" class="menu__button mobile-hamb__button">Учебные заведения</button>
+        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#" class="mobile-hamb__link">Вузы</a></button>
+        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#" class="mobile-hamb__link">Техникумы</a></button>
+        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#" class="mobile-hamb__link">Училища</a></button>
+      </li>
+      <li class="menu__point">
+        <button type="button" class="menu__button mobile-hamb__button">Направления</button>
+        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#" class="mobile-hamb__link">Специальности</a></button>
+        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#" class="mobile-hamb__link">Профессии</a></button>
+      </li>
+      <li class="menu__point"><button type="button" class="menu__button mobile-hamb__button"><a href="#" class="mobile-hamb__link">Отзывы</a></button></li>
+      <li class="menu__point"><button type="button" class="menu__button mobile-hamb__button"><a href="#" class="mobile-hamb__link">Тест на профориентацию</a></button></li>
+      
+    </ul>
+    <button type="button" class="close-btn mobile-hamb__close-btn"></button>
+  </div>
   <!-- Попап изменения геолокации -->
   <div class="popup-geo">
     <div class="popup-geo__container">

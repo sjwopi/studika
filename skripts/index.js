@@ -25,10 +25,16 @@ const popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
 const popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
 const geoBackPopUp = document.querySelector('.popup-geo__back');
 
+const popupHamb = document.querySelector('.mobile-hamb');
+const popupHambCloseBtn = popupHamb.querySelector('.mobile-hamb__close-btn');
+
 function checkWidth() {
   if (screenWidth <= 1400) {
     arrowRight.classList.add('active');
     backGradientRight.classList.add('active');
+  }
+  if (screenWidth <= 620) {
+    
   }
   if (screenWidth <= 550) {
     leadLikeBtn.textContent = '';
@@ -65,6 +71,28 @@ popUpGeoCloseBtn.addEventListener('click', geoPopUp);
 searchPopUpBtn.addEventListener('click', searchPopUp);
 searchContainer.addEventListener('click', animationNone);
 searchPopUpClose.addEventListener('click', function two() { searchPopUp(); animationNone(); });
+
+hamburger.addEventListener('click', function() {
+  popupHamb.classList.toggle('active');
+  popupHambCloseBtn.classList.toggle('active');
+});
+popupHambCloseBtn.addEventListener('click', function() {
+  popupHamb.classList.toggle('active');
+  popupHambCloseBtn.classList.toggle('active');
+})
+
+popupHamb.addEventListener('click', function(evt) {
+  const arrBtn = evt.target.parentNode.querySelectorAll('.mobile-hamb__button_child');
+  if (evt.target.classList.contains('mobile-hamb__button')) {
+    for (let i = 0; i < arrBtn.length; i++) {
+      arrBtn[i].classList.toggle('active')
+    }
+  } else if (evt.target.classList.contains('mobile-hamb__close-btn')) {
+    for (let i = 0; i < arrBtn.length; i++) {
+      arrBtn[i].classList.remove('active')
+    }
+  }
+})
 
 arrowRight.addEventListener('click', skrollMenu);
 arrowLeft.addEventListener('click', skrollMenu);
