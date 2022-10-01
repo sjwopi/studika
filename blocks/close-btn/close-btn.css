@@ -3,7 +3,7 @@
   border: none;
   width: 28px;
   height: 28px;
-  background: url("../../../img/closebutton.svg") center/contain no-repeat;
+  background: url("../../img/closebutton.svg") center/contain no-repeat;
   cursor: pointer;
   z-index: 3;
 }
