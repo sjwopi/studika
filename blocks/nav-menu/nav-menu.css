@@ -1,4 +1,5 @@
 .nav-menu {
+  grid-column: 1/2;
   max-width: fit-content;
   position: sticky;
   top: 28px;

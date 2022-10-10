@@ -1,0 +1,26 @@
+.basic__places {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 0 0 0 32
+  px;
+}
+.basic__places-title {
+  font-family: "Formular";
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 0 4px 0;
+}
+.basic__places-title_blue {
+  color: #0656B4;
+}
+.basic__places-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}

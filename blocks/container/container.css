@@ -1,8 +1,5 @@
 .container {
-  padding: 0 0 0 220px;
-}
-@media screen and (max-width: 900px) {
-  .container {
-    padding: 0;
-  }
+  display: grid;
+  padding: 45px 0 0 0;
+  grid-template-columns: 300px 1fr;
 }

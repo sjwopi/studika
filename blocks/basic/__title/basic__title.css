@@ -1,0 +1,9 @@
+.basic__title {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 36px;
+}

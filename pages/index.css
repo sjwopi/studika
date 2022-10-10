@@ -58,9 +58,15 @@
 @import url(../blocks/lead/__like-btn/lead__like-btn.css);
 @import url(../blocks/lead/__share-btn/lead__share-btn.css);
 
+@import url(../blocks/container/container.css);
+
 @import url(../blocks/nav-menu/nav-menu.css);
 @import url(../blocks/nav-menu/__item/nav-menu__item.css);
-@import url(../blocks/container/container.css);
+
+@import url(../blocks/basic/basic.css);
+@import url(../blocks/basic/__container/basic__container.css);
+@import url(../blocks/basic/__title/basic__title.css);
+@import url(../blocks/basic/__places/basic__places.css);
 
 @import url(../blocks/back-popup/back-popup.css);
 
