@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title itemprop="headline">МГТУ им. Баумана</title>
   <link rel="icon" sizes="180x180" href="img/site-icon.webp">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="pages/index.css">
 </head>
 
@@ -15,38 +16,65 @@
   <header class="header">
     <div class="header__container">
       <div class="header__info">
-
+        <buttom type="buttun" class="header__mobile-hamb"></buttom>
         <img src="img/logo.svg" class="header__logo">
-        <button type="button" class="header__geo">Любой регион</button>
+        <div class="geo">
+          <button type="button" class="header__geo">Любой регион</button>
+          <!-- Попап выбора города -->
+          <div class="popup-geo__back"></div>
+          <div class="popup-geo">
+            <input class="search popup-geo__search" placeholder="Регион, город, населенный пункт">
+            <div class="popup-geo__loading active"></div>
+            <div class="popup-geo__select-cities select-cities">
+
+              <div class="select-cities__container">
+                <p class="select-cities__name"></p>
+                <button class="select-cities__delete-btn"></button>
+              </div>
+
+            </div>
+
+            <div class="swiper-geo swiper">
+              <ul class="popup-geo__list  swiper-wrapper">
+                <li class="popup-geo__list-item swiper-slide">
+                  <p class="popup-geo__city">Россия</p>
+                  <p class="popup-geo__area"></p>
+                </li>
+              </ul>
+            </div>
+
+            <button class="popup-geo__select-btn">сохранить</button>
+          </div>
+        </div>
 
         <input type="search" class="header__search search" placeholder="Учебное заведение, специальность или профессия">
-        <button type="button" class="header__search-close close-btn"></button>
-        <button type="button" class="header__search-btn"></button>
-
         <button type="button" class="header__favorites">
           <p class="header__favorites-count">1</p>
         </button>
 
         <button type="button" class="header__enter-btn">Войти</button>
-        <buttom type="buttun" class="header__mobile-hamb"></buttom>
       </div>
       <!-- Меню шапки -->
       <nav class="header__menu menu">
-        <div class="menu__back-gradient_left"></div>
-        <button type="button" class="menu__arrow menu__arrow_orientation_left left-arrow"></button>
-        <ul class="menu__list menu__list_skroll-start">
-          <li class="menu__point"><button type="button" class="menu__button">Вузы</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Техникумы</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Училища</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Специальности</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Профессии</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Отзывы</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Учебные заведения</button></li>
-          <li class="menu__point"><button type="button" class="menu__button">Тест на профориентацию</button>
-          </li>
-        </ul>
-        <div class="menu__back-gradient_right"></div>
-        <button type="button" class="menu__arrow menu__arrow_orientation_right right-arrow"></button>
+        <!--  -->
+        <div class="swiper-menu swiper">
+          <ul class="menu__list swiper-wrapper">
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Вузы</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Техникумы</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Училища</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Специальности</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Профессии</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Отзывы</button></li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Учебные заведения</button>
+            </li>
+            <li class="menu__point swiper-slide"><button type="button" class="menu__button">Тест на
+                профориентацию</button></li>
+          </ul>
+
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
+        </div>
+        <!--  -->
       </nav>
     </div>
   </header>
@@ -80,6 +108,7 @@
           </div>
           <div class="lead__btns">
             <button type="button" class="lead__like-btn">В Избранное</button>
+            <button type="button" class="lead__like-btn_mobile"></button>
             <button type="button" class="lead__share-btn"></button>
           </div>
         </div>
@@ -122,79 +151,22 @@
             <p class=basic__places-text>в РФ</p>
           </div>
         </div>
-
-        <div class="basic__container basic__container_three">
-          <div class="basic__places">
-            <h3 class="basic__places-title">4532</h3>
-            <p class=basic__places-text>платных мест</p>
-          </div>
-          <div class="basic__places">
-            <h3 class="basic__places-title">1702</h3>
-            <p class=basic__places-text>бюджетных мест</p>
-          </div>
-        </div>
-
-        <div class="basic__container basic__container_four">
-          <div class="basic__places">
-            <h3 class="basic__places-title">4532</h3>
-            <p class=basic__places-text>платных мест</p>
-          </div>
-          <div class="basic__places">
-            <h3 class="basic__places-title">1702</h3>
-            <p class=basic__places-text>бюджетных мест</p>
-          </div>
-        </div>
-
       </div>
-      <div style="height: 2000px"></div>
     </section>
 
-
-
+    <div class="popup-hamb__back"></div>
+    <div class="popup-hamb">
+      <button class="popup-hamb__enter">войти</button>
+      <div class="popup-hamb__geo">
+        <button class="popup-hamb__enter">выбрать город</button>
+      </div>
+    </div>
   </main>
 
-  <footer class="footer">
+
+  <footer class="footer" style="height: 2000px">
   </footer>
-  <!-- Попап mobile-hamb -->
-  <div class="mobile-hamb">
-    <ul class="menu__list mobile-hamb__list">
-      <li class="menu__point">
-        <button type="button" class="menu__button mobile-hamb__button">Учебные заведения</button>
-        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#"
-            class="mobile-hamb__link">Вузы</a></button>
-        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#"
-            class="mobile-hamb__link">Техникумы</a></button>
-        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#"
-            class="mobile-hamb__link">Училища</a></button>
-      </li>
-      <li class="menu__point">
-        <button type="button" class="menu__button mobile-hamb__button">Направления</button>
-        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#"
-            class="mobile-hamb__link">Специальности</a></button>
-        <button type="button" class="menu__button mobile-hamb__button_child"><a href="#"
-            class="mobile-hamb__link">Профессии</a></button>
-      </li>
-      <li class="menu__point"><button type="button" class="menu__button mobile-hamb__button"><a href="#"
-            class="mobile-hamb__link">Отзывы</a></button></li>
-      <li class="menu__point"><button type="button" class="menu__button mobile-hamb__button"><a href="#"
-            class="mobile-hamb__link">Тест на профориентацию</a></button></li>
-
-    </ul>
-    <button type="button" class="close-btn mobile-hamb__close-btn"></button>
-  </div>
-  <!-- Попап изменения геолокации -->
-  <div class="popup-geo">
-    <div class="popup-geo__container">
-      <input type="search" placeholder="Москва" class="popup-geo__search search">
-      <button type="button" class="popup-geo__select-button">Выбрать</button>
-      <button type="button" class="popup-geo__close-button close-btn"></button>
-    </div>
-  </div>
-  <div class="popup-geo__back"></div>
-
-  <div class="back-popup">
-    <div class="back-popup__color"></div>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="skripts/index.js"></script>
 </body>
 

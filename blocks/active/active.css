@@ -1,3 +1,9 @@
 .active {
   display: block;
 }
+.active-flex {
+  display: flex;
+}
+.disable {
+  display: none;
+}

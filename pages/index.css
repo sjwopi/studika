@@ -36,10 +36,9 @@
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_left.css);
 @import url(../blocks/menu/__back-gradient/menu__back-gradient_right.css);
 
+@import url(../blocks/swiper/swiper.css);
+
 @import url(../blocks/mobile-hamb/mobile-hamb.css);
-@import url(../blocks/mobile-hamb/__list/mobile-hamb__list.css);
-@import url(../blocks/mobile-hamb/__button/mobile-hamb__button.css);
-@import url(../blocks/mobile-hamb/__close-btn/mobile-hamb__close-btn.css);
 
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__crump/lead__crump.css);
@@ -56,6 +55,7 @@
 @import url(../blocks/lead/__list-item/lead__list-item.css);
 @import url(../blocks/lead/__btns/lead__btns.css);
 @import url(../blocks/lead/__like-btn/lead__like-btn.css);
+@import url(../blocks/lead/__like-btn/_mobile/lead__like-btn_mobile.css);
 @import url(../blocks/lead/__share-btn/lead__share-btn.css);
 
 @import url(../blocks/container/container.css);
@@ -68,13 +68,23 @@
 @import url(../blocks/basic/__title/basic__title.css);
 @import url(../blocks/basic/__places/basic__places.css);
 
-@import url(../blocks/back-popup/back-popup.css);
-
 @import url(../blocks/popup-geo/popup-geo.css);
 @import url(../blocks/popup-geo/__back/popup-geo__back.css);
-@import url(../blocks/popup-geo/__container/popup-geo__container.css);
 @import url(../blocks/popup-geo/__search/popup-geo__search.css);
-@import url(../blocks/popup-geo/__select-button/popup-geo__select-button.css);
-@import url(../blocks/popup-geo/__close-button/popup-geo__close-button.css);
+@import url(../blocks/popup-geo/__loading/popup-geo__loading.css);
+@import url(../blocks/popup-geo/__list/popup-geo__list.css);
+@import url(../blocks/popup-geo/__list-item/popup-geo__list-item.css);
+@import url(../blocks/popup-geo/__city/popup-geo__city.css);
+@import url(../blocks/popup-geo/__area/popup-geo__area.css);
+@import url(../blocks/popup-geo/__select-btn/popup-geo__select-btn.css);
+
+@import url(../blocks/select-cities/select-cities.css);
+@import url(../blocks/select-cities/__container/select-citis__container.css);
+@import url(../blocks/select-cities/__name/select-cities__name.css);
+@import url(../blocks/select-cities/__delete-btn/select-cities__delete-btn.css);
+
+@import url(../blocks/popup-hamb/popup-hamb.css);
+@import url(../blocks/popup-hamb/__back/popup-hamb__back.css);
+@import url(../blocks/popup-hamb/__enter/popup-hamb__enter.css);
 
 @import url(../blocks/active/active.css);

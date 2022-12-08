@@ -1,9 +1,14 @@
 .basic {
-  width: 1000px;
+  max-width: 1000px;
   font-family: "Open Sans";
   color: #222222;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px 100px 180px;
   grid-gap: 14px;
+}
+@media screen and (max-width: 1000px){
+  .basic {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

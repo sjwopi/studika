@@ -1,0 +1,9 @@
+.select-cities__delete-btn {
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 5px;
+  width: 24px;
+  height: 24px;
+  background: url("../../../img/closebtn.svg") center/cover no-repeat;
+  filter: invert(1);
+}

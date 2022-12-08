@@ -20,3 +20,21 @@
   grid-row: 3/4;
   grid-column: 4/5;
 }
+@media screen and (max-width: 1000px){
+  .basic__container_one {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .basic__container_two {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .basic__container_three {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .basic__container_four {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+}

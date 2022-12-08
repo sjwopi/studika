@@ -1,0 +1,31 @@
+.lead__like-btn_mobile {
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #767676;
+  border-radius: 20px;
+  background: url("../../../../img/like.svg") 10px 11px/16px no-repeat;
+  margin: -12px 18px 0 0;
+  padding: 0 0 0 20px;
+  transition: all .2s ease-in-out;
+  width: 40px;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+  position: absolute;
+  bottom: 214px;
+  right: 55px;
+}
+@media screen and (max-width: 550px) {
+  .lead__like-btn_mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lead__like-btn_mobile {
+    bottom: 255px;
+    right: 30px;
+  }
+}

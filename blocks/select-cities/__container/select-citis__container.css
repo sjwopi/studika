@@ -1,0 +1,16 @@
+.select-cities__container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+  height: 24px;
+  background: #0656B4;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 9px 9px 9px 15px;
+  line-height: 22px;
+  margin: 0 0 10px 20px;
+  position: relative;
+}

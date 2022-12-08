@@ -1,98 +1,147 @@
-const screenWidth = window.screen.width;
-
-
-const backPopUp = document.querySelector('.back-popup');
-
-const header = document.querySelector('.header');
-const hamburger = header.querySelector('.header__mobile-hamb');
-const searchContainer = header.querySelector('.header__search');
-const searchPopUpBtn = header.querySelector('.header__search-btn');
-const searchPopUpClose = header.querySelector('.header__search-close');
-const geoBtn = header.querySelector('.header__geo');
-
-const menu = document.querySelector('.menu');
-const menuList = menu.querySelector('.menu__list');
-const arrowRight = menu.querySelector('.right-arrow');
-const arrowLeft = menu.querySelector('.left-arrow');
-const backGradientRight = menu.querySelector('.menu__back-gradient_right');
-const backGradientLeft = menu.querySelector('.menu__back-gradient_left');
-
-const lead = document.querySelector('.lead');
-const leadLikeBtn = lead.querySelector('.lead__like-btn');
-
-const popUpGeo = document.querySelector('.popup-geo');
-const popUpGeoSelectBtn = popUpGeo.querySelector('.popup-geo__select-button');
-const popUpGeoCloseBtn = popUpGeo.querySelector('.popup-geo__close-button');
-const geoBackPopUp = document.querySelector('.popup-geo__back');
-
-const popupHamb = document.querySelector('.mobile-hamb');
-const popupHambCloseBtn = popupHamb.querySelector('.mobile-hamb__close-btn');
-
-function checkWidth() {
-  if (screenWidth <= 1400) {
-    arrowRight.classList.add('active');
-    backGradientRight.classList.add('active');
-  }
-  if (screenWidth <= 620) {
-    
-  }
-  if (screenWidth <= 550) {
-    leadLikeBtn.textContent = '';
-    lead.querySelector('.lead__container').append(leadLikeBtn);
-  }
-}
-function skrollMenu() {
-  arrowRight.classList.toggle('active');
-  backGradientRight.classList.toggle('active');
-  arrowLeft.classList.toggle('active');
-  backGradientLeft.classList.toggle('active');
-  menuList.classList.toggle('menu__list_skroll-end');
-  menuList.classList.toggle('menu__list_skroll-start')
-}
-function searchPopUp() {
-  searchContainer.classList.toggle('active');
-  searchPopUpClose.classList.toggle('active');
-  backPopUp.classList.toggle('active');
-}
-function animationNone() {
-  searchContainer.classList.toggle('header__search_animation_none');
-}
-function geoPopUp() {
-  popUpGeo.classList.toggle('active');
-  popUpGeoCloseBtn.classList.toggle('active');
-  geoBackPopUp.classList.toggle('active');
-  backPopUp.classList.toggle('active');
-}
-checkWidth(); popUpGeoSelectBtn
-geoBtn.addEventListener('click', geoPopUp);
-popUpGeoSelectBtn.addEventListener('click', geoPopUp);
-popUpGeoCloseBtn.addEventListener('click', geoPopUp);
-
-searchPopUpBtn.addEventListener('click', searchPopUp);
-searchContainer.addEventListener('click', animationNone);
-searchPopUpClose.addEventListener('click', function two() { searchPopUp(); animationNone(); });
-
-hamburger.addEventListener('click', function() {
-  popupHamb.classList.toggle('active');
-  popupHambCloseBtn.classList.toggle('active');
+const swiperMenu = new Swiper('.swiper-menu', {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: true,
+  slidesPerView: 'auto',
+  slidesPerGroup: 10,
+  autoWidth: true
 });
-popupHambCloseBtn.addEventListener('click', function() {
-  popupHamb.classList.toggle('active');
-  popupHambCloseBtn.classList.toggle('active');
-})
 
-popupHamb.addEventListener('click', function(evt) {
-  const arrBtn = evt.target.parentNode.querySelectorAll('.mobile-hamb__button_child');
-  if (evt.target.classList.contains('mobile-hamb__button')) {
-    for (let i = 0; i < arrBtn.length; i++) {
-      arrBtn[i].classList.toggle('active')
-    }
-  } else if (evt.target.classList.contains('mobile-hamb__close-btn')) {
-    for (let i = 0; i < arrBtn.length; i++) {
-      arrBtn[i].classList.remove('active')
+const headerGeoBtn = document.querySelector('.header__geo');
+const popupGeo = document.querySelector('.popup-geo');
+const popupGeoBack = document.querySelector('.popup-geo__back')
+const popupHamb = document.querySelector('.popup-hamb');
+const popupGeoHamb = popupHamb.querySelector('.popup-geo_hamb')
+const popupHambBack = document.querySelector('.popup-hamb__back')
+const geoList = document.querySelector('.popup-geo__list');
+const geoListItem = geoList.querySelector('.popup-geo__list-item');
+const loadingGeo = popupGeo.querySelector('.popup-geo__loading')
+
+const citySelectedList = document.querySelector('.select-cities');
+const citySelected = citySelectedList.querySelector('.select-cities__container');
+
+const mobileHambBtn = document.querySelector('.header__mobile-hamb')
+const hambGeoBtn = document.querySelector('.popup-hamb__geo')
+
+/* Функционал выбора города */
+/* Получение списка городов */
+const getCities = () => {
+  return fetch('https://studika.ru/api/areas', {
+    method: 'POST'
+  })
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject(`Ошибка: ${res.status}`)
+    })
+    .then((areas) => {
+      renderGeoItem(areas);
+    })
+    .then(() => {
+      const swiperGeo = new Swiper('.swiper-geo', {
+        direction: 'vertical',
+        mousewheel: true,
+        slidesPerView: 10
+      });
+      loadingGeo.classList.remove('active')
+    })
+    .catch((err) => {
+      console.log(`Ошибка: ${err}`);
+    });
+}
+/* Создание нового элемента */
+const createItem = (nameArea, nameCity, item, isCity) => {
+  this._item = item;
+  this._area = this._item.querySelector('.popup-geo__area');
+  this._city = this._item.querySelector('.popup-geo__city');
+  this._city.textContent = nameCity;
+  if (isCity) {
+    this._area.textContent = nameArea;
+    this._item.addEventListener('click', selectCity)
+  } else {
+    this._item.classList.add('popup-geo__list-item_only-area')
+  }
+  return this._item;
+}
+/* Выбор города */
+function selectCity(evt) {
+  let item = citySelected.cloneNode(true);
+  item.classList.add('active-flex');
+
+  if (evt) {
+    item.querySelector('.select-cities__name').textContent = evt.target.parentElement.querySelector('.popup-geo__city').textContent;
+  } else { item.querySelector('.select-cities__name').textContent = 'Москва' }
+
+  item.querySelector('.select-cities__delete-btn').addEventListener('click', () => {
+    item.classList.remove('active-flex')
+  })
+  citySelectedList.append(item)
+}
+/* Рендер новых элементов списка */
+const renderGeoItem = (areas) => {
+  for (key in areas) {
+    if (key == 0) { continue }
+    let nameArea = areas[key].name;
+    let item = createItem('', nameArea, geoListItem.cloneNode(true), false);
+    geoList.append(item)
+    for (city in areas[key].cities) {
+      let item = createItem(nameArea, areas[key].cities[city].name, geoListItem.cloneNode(true), true);
+      geoList.append(item)
     }
   }
-})
+}
+getCities();
 
-arrowRight.addEventListener('click', skrollMenu);
-arrowLeft.addEventListener('click', skrollMenu);
+selectCity(false);
+
+function openPopupGeo() {
+  popupGeo.classList.add('active-flex');
+  popupGeoBack.classList.add('active')
+  popupGeoBack.addEventListener('click', closePopupGeo)
+}
+function closePopupGeo() {
+  popupGeo.classList.remove('active-flex')
+  popupGeoBack.classList.remove('active')
+  popupGeoBack.removeEventListener('click', closePopupGeo)
+}
+function openPopupHamb() {
+  popupHamb.classList.add('popup-hamb_active');
+  popupHambBack.classList.add('active');
+  popupHambBack.addEventListener('click', closePopupHamb)
+}
+function closePopupHamb() {
+  popupHamb.classList.remove('popup-hamb_active')
+  popupHambBack.classList.remove('active')
+  popupHambBack.removeEventListener('click', closePopupHamb)
+}
+
+headerGeoBtn.addEventListener('click', openPopupGeo)
+mobileHambBtn.addEventListener('click', openPopupHamb)
+
+window.onload = () => {
+  let input = document.querySelector('.popup-geo__search');
+  input.oninput = () => {
+    let value = input.value;
+    let list = document.querySelectorAll('.popup-geo__city');
+
+    if (value != '') {
+      for (let i = 0; i < list.length; i++) {
+        if (list[i].textContent.search(value) == -1) {
+          list[i].parentElement.classList.add('disable')
+        } else {
+          list[i].parentElement.classList.remove('disable')
+          console.log(list[i].parentElement)
+        }
+      }
+    } else {
+      for (let i = 0; i < list.length; i++) {
+        list[i].parentElement.classList.remove('disable')
+
+      }
+    }
+  }
+}

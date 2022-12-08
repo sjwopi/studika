@@ -22,17 +22,6 @@
 }
 @media screen and (max-width: 550px) {
   .lead__like-btn {
-    width: 40px;
-    background-color: #f1f1f1;
-    border-color: #f1f1f1;
-    position: absolute;
-    bottom: 230px;
-    right: 55px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .lead__like-btn {
-    bottom: 271px;
+    display: none;
   }
 }

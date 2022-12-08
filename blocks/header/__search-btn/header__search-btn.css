@@ -7,9 +7,3 @@
   cursor: pointer;
   background: url("../../../img/search.svg") center/cover no-repeat;
 }
-
-@media screen and (max-width: 620px) {
-  .header__search-btn {
-    display: block;
-  }
-}

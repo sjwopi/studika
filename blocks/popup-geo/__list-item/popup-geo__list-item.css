@@ -1,0 +1,9 @@
+.popup-geo__list-item {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 16px;
+  margin: 0;
+}
+.popup-geo__list-item_only-area {
+  padding: 0 16px;
+}

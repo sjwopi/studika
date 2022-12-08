@@ -1,0 +1,15 @@
+.popup-geo__select-btn {
+  width: 100%;
+  min-height: 44px;
+  border: none;
+  background-color: rgba(6, 86, 180, 1);
+  font-family: 'Formular';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+}
